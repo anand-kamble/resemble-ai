@@ -1,0 +1,18 @@
+.Header {
+    background-color: #ff6600;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    border: 1px solid white;
+    padding: 0px 0.25rem;
+    margin: 0px 0.25rem;
+    cursor: pointer;
+}
+
+.header_links{
+    padding: 0px 0.25rem;
+    color: black;
+    text-decoration: none;
+}
