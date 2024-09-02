@@ -33,10 +33,13 @@ const Post = ({
         <br />
         <span className="subline">
           {points} {points > 1 ? "points" : "point"} by {author}{" "}
-          {timeDifference(+Date.now(), time_posted * 1000)} | {descendants}{" "}
+          {timeDifference(+Date.now(), time_posted * 1000)}{" "}
+          {descendants !== undefined ? "|" : null} {descendants}{" "}
           {descendants !== undefined && descendants > 1
             ? "comments"
-            : "comment"}
+            : descendants !== undefined
+            ? "comment"
+            : null}
         </span>
       </div>
     </div>
